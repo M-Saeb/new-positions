@@ -1,0 +1,118 @@
+@import url('./tailwind.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+div#main-page{
+  background-image: url('./assets/cafe.jpg');
+  background-size: cover;
+  transition: 1s;
+  animation: background-animation 100s forwards;
+  animation-delay: 4s;
+  /* animation: slide 30s linear; */
+}
+
+/* .for-ani{
+  animation: background-animation 10s forwards 0s ease;
+  
+} */
+
+div#shade{
+  background-color: rgba(0,0,0,0.5);
+  animation-delay: 1s;
+  animation: reveal 3s forwards;
+}
+
+.credit{
+  font-family: 'Shadows Into Light', cursive;
+  width: 60%;
+  position: absolute;
+  bottom: 20vh;
+  left: 20%;
+}
+
+#page-1{
+  top:0;
+  left: 0vw;
+  overflow: hidden;
+  height: 100vh;
+  animation: text-animation 10s forwards;
+}
+
+.page{
+  top:0;
+  left: 100vw;
+  transition: 1s;
+}
+
+@keyframes text-animation{
+  0%{
+    height: 0vh;
+    /* left: 50vw; */
+  }
+  15%{
+    height: 25vh;
+  }
+  20%{
+    height: 25vh;
+  }
+  35%{
+    height: 40vh;
+  }
+  50%{
+    height: 40vh;
+  }
+  65%{
+    height: 52vh;
+  }
+  85%{
+    height: 52vh;
+  }
+  100%{
+    /* left: 0vw; */
+    height: 70vh;
+  }
+}
+
+@keyframes background-animation{
+  0%{
+    background-position: left;
+  }
+  15%{    
+    background-position: right;
+    background-image: url('./assets/cafe.jpg');
+  }
+  17%{
+    background-image: url('./assets/picture_3.jpg');
+  }
+  32%{
+    background-position: left;
+    background-image: url('./assets/picture_3.jpg');
+  }
+  34%{
+    background-image: url('./assets/penguin.jpg');
+  }
+  49%{
+    background-image: url('./assets/penguin.jpg');
+    background-position: right;
+  }
+  51%{
+    background-image: url('./assets/picture_1.jpg');
+  }
+  66%{
+    background-image: url('./assets/picture_1.jpg');
+    background-position: left;
+  }
+}
+
+@keyframes reveal{
+  from{
+    background-color: rgba(0,0,0);
+  }
+  to{
+    background-color: rgba(0,0,0,0.5);
+  }
+}
