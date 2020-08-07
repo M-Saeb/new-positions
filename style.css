@@ -6,24 +6,34 @@
   font-family: 'Roboto', sans-serif;
 }
 
-div#main-page{
+#tap-me{
+  background-color: black;
+  opacity: 1;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  transition: 1s;
+}
+
+#tap-me p{
+  padding-top: 40vh;
+  padding-left: 35vw;
+}
+
+div#background-image{
   background-image: url('./assets/cafe.jpg');
   background-size: cover;
   transition: 1s;
-  animation: background-animation 100s forwards;
+  /* animation: background-animation 150s forwards; */
   animation-delay: 4s;
-  /* animation: slide 30s linear; */
 }
 
-/* .for-ani{
-  animation: background-animation 10s forwards 0s ease;
-  
-} */
 
 div#shade{
-  background-color: rgba(0,0,0,0.5);
-  animation-delay: 1s;
-  animation: reveal 3s forwards;
+  background-color: #000000;
+  transition: 3s;
+  /* animation-delay: 1s; */
+  /* animation: reveal 3s forwards; */
 }
 
 .credit{
@@ -34,12 +44,18 @@ div#shade{
   left: 20%;
 }
 
+.lol{
+  position: absolute;
+  bottom: 15vh;
+  left: 18%;
+}
+
 #page-1{
   top:0;
   left: 0vw;
   overflow: hidden;
-  height: 100vh;
-  animation: text-animation 10s forwards;
+  hright: 100vh;
+  /* animation: text-animation 10s forwards; */
 }
 
 .page{
@@ -50,30 +66,33 @@ div#shade{
 
 @keyframes text-animation{
   0%{
-    height: 0vh;
+    hright: 0vh;
     /* left: 50vw; */
   }
   15%{
-    height: 25vh;
+    hright: 20vh;
   }
-  20%{
-    height: 25vh;
+  30%{
+    hright: 20vh;
   }
-  35%{
-    height: 40vh;
+  45%{
+    hright: 37vh;
   }
-  50%{
-    height: 40vh;
+  60%{
+    hright: 37vh;
   }
-  65%{
-    height: 52vh;
+  70%{
+    hright: 50vh;
   }
-  85%{
-    height: 52vh;
+  80%{
+    hright: 50vh;
   }
+  90%{
+    hright: 70vh;
+  }
+
   100%{
-    /* left: 0vw; */
-    height: 70vh;
+    hright: 100vh;
   }
 }
 
@@ -81,30 +100,89 @@ div#shade{
   0%{
     background-position: left;
   }
-  15%{    
+  9%{    
     background-position: right;
     background-image: url('./assets/cafe.jpg');
   }
-  17%{
-    background-image: url('./assets/picture_3.jpg');
+  10%{
+    background-position: right;
+    background-image: url('./assets/penguin.jpg');
+  }
+  20%{
+    background-position: left;
+    background-image: url('./assets/penguin.jpg');
+  }
+  21%{
+    background-position: left;
+    background-image: url('./assets/class.jpg');
+  }
+  31%{
+    background-position: right;
+    background-image: url('./assets/class.jpg');
   }
   32%{
+    background-position: right;
+    background-image: url('./assets/picture_7.jpg');
+  }
+  41%{
+    background-position: left;
+    background-image: url('./assets/picture_7.jpg');
+  }
+  42%{
+    background-position: left;
+    background-image: url('./assets/picture_5.jpg');
+  }
+  51%{
+    background-position: right;
+    background-image: url('./assets/picture_5.jpg');
+  }
+  52%{
+    background-position: right;
+    background-image: url('./assets/picture_3.jpg');
+  }
+  61%{
     background-position: left;
     background-image: url('./assets/picture_3.jpg');
   }
-  34%{
-    background-image: url('./assets/penguin.jpg');
-  }
-  49%{
-    background-image: url('./assets/penguin.jpg');
-    background-position: right;
-  }
-  51%{
-    background-image: url('./assets/picture_1.jpg');
-  }
-  66%{
-    background-image: url('./assets/picture_1.jpg');
+  62%{
     background-position: left;
+    background-image: url('./assets/picture_1.jpg');
+  }
+  71%{
+    background-position: right;
+    background-image: url('./assets/picture_1.jpg');
+  }
+  72%{
+    background-position: right;
+    background-image: url('./assets/picture_6.jpg');
+  }
+  80%{
+    background-position: left;
+    background-image: url('./assets/picture_6.jpg');
+  }
+  81%{
+    background-position: left;
+    background-image: url('./assets/wissam.jpg');
+  }
+  85%{
+    background-position: right;
+    background-image: url('./assets/wissam.jpg');
+  }  
+  86%{
+    background-position: right;
+    background-image: url('./assets/cat.jpg');
+  }
+  91%{
+    background-position: left;
+    background-image: url('./assets/cat.jpg');
+  }
+  92%{
+    background-position: left;
+    background-image: url('./assets/everyone.jpg');
+  }
+  100%{
+    background-position: right;
+    background-image: url('./assets/everyone.jpg');
   }
 }
 
