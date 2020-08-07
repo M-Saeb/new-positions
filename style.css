@@ -54,7 +54,7 @@ div#shade{
   top:0;
   left: 0vw;
   overflow: hidden;
-  hright: 100vh;
+  height: 100vh;
   /* animation: text-animation 10s forwards; */
 }
 
@@ -66,33 +66,33 @@ div#shade{
 
 @keyframes text-animation{
   0%{
-    hright: 0vh;
+    height: 0vh;
     /* left: 50vw; */
   }
   15%{
-    hright: 20vh;
+    height: 20vh;
   }
   30%{
-    hright: 20vh;
+    height: 20vh;
   }
   45%{
-    hright: 37vh;
+    height: 37vh;
   }
   60%{
-    hright: 37vh;
+    height: 37vh;
   }
   70%{
-    hright: 50vh;
+    height: 50vh;
   }
   80%{
-    hright: 50vh;
+    height: 50vh;
   }
   90%{
-    hright: 70vh;
+    height: 70vh;
   }
 
   100%{
-    hright: 100vh;
+    height: 100vh;
   }
 }
 
